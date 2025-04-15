@@ -3,57 +3,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>给刘宇飞的小惊喜</title>
+  <title>说明一下！</title>
+  <meta http-equiv="refresh" content="12;url=quiz.html">
   <style>
     body {
       font-family: "Comic Sans MS", sans-serif;
-      background: #fffbe6;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      flex-direction: column;
+      background-color: #fef6e4;
+      color: #333;
+      padding: 50px;
       text-align: center;
     }
     h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 28px;
+      color: #f76c6c;
     }
-    input {
-      padding: 10px;
-      font-size: 16px;
+    p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.8;
     }
-    button {
-      margin-top: 10px;
-      padding: 8px 16px;
-      font-size: 16px;
-      background-color: #ffcc00;
-      border: none;
-      cursor: pointer;
-    }
-    .error {
-      color: red;
-      margin-top: 10px;
+    .small {
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>我们互发第一条消息是哪天？</h1>
-  <input type="text" id="password" placeholder="请输入如：3月11日">
-  <button onclick="checkPassword()">确认！</button>
-  <div class="error" id="errorMsg"></div>
-
-  <script>
-    function checkPassword() {
-      const input = document.getElementById("password").value.trim().replace(/\s+/g, "");
-      const acceptedAnswers = ["3月11日", "3/11", "三月十一日", "3.11", "03月11日"];
-      if (acceptedAnswers.includes(input)) {
-        window.location.href = "question1.html";
-      } else {
-        document.getElementById("errorMsg").textContent = "你该不会忘了吧？再想想看～";
-      }
-    }
-  </script>
+  <h1>这个网页……先让我解释一下！</h1>
+  <p>这个H5是我一开始想做得很感人、很走心、很浪漫的那种生日网页……</p>
+  <p>但现实是——它非常尴尬，尤其是你听到我配的语音的时候，我自己听都羞耻到想立刻删库跑路！</p>
+  <p>而且还有很多bug，比如第一题的效果和后面的不太一致，语音也不是自动播放的，整个过程非常难搞，但我真的做了很久。</p>
+  <p>所以最后就变成了一个“尬中带点努力、bug中藏着心意”的生日礼物，希望你看了以后……别笑太大声，但还是能感受到一丢丢的开心和幸福。</p>
+  <p>这个页面是在ChatGPT的帮助下一点点搭建出来的，我真的已经尽力了。</p>
+  <p class="small">(页面将在几秒后自动跳转到答题页面...)</p>
 </body>
 </html>

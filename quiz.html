@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>给刘宇飞的小惊喜</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", sans-serif;
+      background: #fffbe6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #ffcc00;
+      border: none;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>我们互发第一条消息是哪天？</h1>
+  <input type="text" id="password" placeholder="请输入如：3月11日">
+  <button onclick="checkPassword()">确认！</button>
+  <div class="error" id="errorMsg"></div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value.trim().replace(/\s+/g, "");
+      const acceptedAnswers = ["3月11日", "3/11", "三月十一日", "3.11", "03月11日"];
+      if (acceptedAnswers.includes(input)) {
+        window.location.href = "question1.html";
+      } else {
+        document.getElementById("errorMsg").textContent = "你该不会忘了吧？再想想看～";
+      }
+    }
+  </script>
+</body>
+</html>
