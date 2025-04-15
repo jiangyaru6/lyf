@@ -8,13 +8,16 @@
   <button onclick="checkAnswer(false)">一小时礼貌型</button><br/>
   <button onclick="checkAnswer(true)">两到三小时灵魂拷问型</button>
   <audio id="wrongAudio" src="q2_wrong.m4a"></audio>
+  <p id="wrongHint" style="display:none; color:#c00; font-weight:bold;">
+    答错啦！点这里听我怎么吐槽你：
+    <button onclick="document.getElementById('wrongAudio').play()">播放语音</button>
+  </p>
   <script>
     function checkAnswer(correct) {
       if (correct) {
         window.location.href = "question3.html";
       } else {
-        document.getElementById("wrongAudio").play();
-        alert("不是吧，你也太低估我们了！");
+        document.getElementById("wrongHint").style.display = "block";
       }
     }
   </script>

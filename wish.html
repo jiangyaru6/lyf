@@ -5,11 +5,9 @@
 <body style="font-family:Comic Sans MS;background:#e0f7fa;padding:30px;text-align:center;">
   <h2>闭上眼睛许愿吧！</h2>
   <p>希望你想的那个愿望，会慢慢变成现实。</p>
-  <img src="cake.png" width="200"><br/>
-  <audio autoplay loop>
-    <source src="birthday_song.mp3" type="audio/mp3">
-  </audio>
-  <br/><br/>
+  <img src="cake.png" width="200"><br/><br/>
+  <button onclick="document.getElementById('bgm').play()" style="padding:8px 16px;margin-bottom:10px;">点击播放生日歌</button>
+  <audio id="bgm" src="birthday_song.mp3" loop></audio><br/><br/>
   <button onclick="window.location.href='letter.html'" style="padding:10px 20px;">我许完愿啦！</button>
 </body>
 </html>

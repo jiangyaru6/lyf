@@ -8,13 +8,16 @@
   <button onclick="checkAnswer(false)">地球绕太阳又转了一圈</button><br/>
   <button onclick="checkAnswer(false)">不就是星期天吗</button>
   <audio id="wrongAudio" src="q1_wrong.m4a"></audio>
+  <p id="wrongHint" style="display:none; color:#c00; font-weight:bold;">
+    答错啦！点这里听我怎么吐槽你：
+    <button onclick="document.getElementById('wrongAudio').play()">播放语音</button>
+  </p>
   <script>
     function checkAnswer(correct) {
       if (correct) {
         window.location.href = "question2.html";
       } else {
-        document.getElementById("wrongAudio").play();
-        alert("再想想，你的生日耶！");
+        document.getElementById("wrongHint").style.display = "block";
       }
     }
   </script>

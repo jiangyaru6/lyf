@@ -10,9 +10,8 @@
   <p>我也知道你朋友很多，礼物不会缺，所以我想来点不一样的——把这份生日祝福，变成一个只属于你的小游戏，一个只可能我来送、你来收的形式。</p>
   <p>希望你今年、明年、以后每一年，都有人记得你喜欢什么、知道你值得什么，在你生日这天，为你点上一根蜡烛，说一声：刘宇飞，生日快乐。</p>
   <p>还有，希望你每天都很开心。真的。</p>
-  <audio autoplay loop>
-    <source src="birthday_song.mp3" type="audio/mp3">
-  </audio>
+  <button onclick="document.getElementById('bgm').play()" style="padding:8px 16px;margin-top:10px;">点击播放生日歌</button>
+  <audio id="bgm" src="birthday_song.mp3" loop></audio><br/><br/>
   <button onclick="window.location.href='index.html'" style="margin-top:30px;padding:10px 20px;">重新开始</button>
 </body>
 </html>

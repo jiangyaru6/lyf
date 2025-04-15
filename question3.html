@@ -8,13 +8,16 @@
   <button onclick="checkAnswer(true)">请你吃麦麦脆汁鸡</button><br/>
   <button onclick="checkAnswer(false)">在朋友圈刷屏包一整天</button>
   <audio id="wrongAudio" src="q3_wrong.m4a"></audio>
+  <p id="wrongHint" style="display:none; color:#c00; font-weight:bold;">
+    答错啦！点这里听我怎么吐槽你：
+    <button onclick="document.getElementById('wrongAudio').play()">播放语音</button>
+  </p>
   <script>
     function checkAnswer(correct) {
       if (correct) {
         window.location.href = "memories.html";
       } else {
-        document.getElementById("wrongAudio").play();
-        alert("想得美~我哪来的那么多权力！");
+        document.getElementById("wrongHint").style.display = "block";
       }
     }
   </script>
