@@ -1,41 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>许愿时刻</title>
-  <style>
-    body {
-      font-family: "Comic Sans MS", sans-serif;
-      background: #e0f7fa;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
-      text-align: center;
-    }
-    h2 {
-      font-size: 24px;
-    }
-    img {
-      width: 200px;
-      margin-top: 20px;
-    }
-    button {
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #00bcd4;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
+<head><meta charset="UTF-8"><title>许愿时刻</title></head>
+<body style="font-family:Comic Sans MS;background:#e0f7fa;padding:30px;text-align:center;">
   <h2>闭上眼睛许愿吧！</h2>
   <p>希望你想的那个愿望，会慢慢变成现实。</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Birthday_cake_icon.svg" alt="Birthday Cake">
-  <button onclick="window.location.href='letter.html'">我许完愿啦！</button>
+  <img src="cake.png" width="200"><br/>
+  <audio autoplay loop>
+    <source src="birthday_song.mp3" type="audio/mp3">
+  </audio>
+  <br/><br/>
+  <button onclick="window.location.href='letter.html'" style="padding:10px 20px;">我许完愿啦！</button>
 </body>
 </html>

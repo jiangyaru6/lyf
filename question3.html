@@ -1,37 +1,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>第三题</title>
-  <style>
-    body {
-      font-family: "Comic Sans MS", sans-serif;
-      background: #e6ffe6;
-      padding: 40px;
-    }
-    h2 {
-      font-size: 22px;
-    }
-    button {
-      display: block;
-      margin: 12px 0;
-      padding: 10px;
-      font-size: 16px;
-      background-color: #90ee90;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
+<head><meta charset="UTF-8"><title>第三题</title></head>
+<body style="font-family:Comic Sans MS;background:#e6ffe6;padding:40px;">
   <h2>Q3：以下哪个是我真的可能为你做的？</h2>
-  <button onclick="checkAnswer(false)">申请联合国设立你的专属节日</button>
-  <button onclick="checkAnswer(true)">请你吃麦麦脆汁鸡</button>
+  <button onclick="checkAnswer(false)">申请联合国设立你的专属节日</button><br/>
+  <button onclick="checkAnswer(true)">请你吃麦麦脆汁鸡</button><br/>
   <button onclick="checkAnswer(false)">在朋友圈刷屏包一整天</button>
-
-  <audio id="wrongAudio" src="assets/audio/q3_wrong.mp3.m4a"></audio>
-
+  <audio id="wrongAudio" src="q3_wrong.m4a"></audio>
   <script>
     function checkAnswer(correct) {
       if (correct) {
