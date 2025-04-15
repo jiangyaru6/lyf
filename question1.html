@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>第一题</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", sans-serif;
+      background: #e6f7ff;
+      padding: 40px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    button {
+      display: block;
+      margin: 12px 0;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #87cefa;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Q1：今天到底是个什么日子？</h2>
+  <button onclick="checkAnswer(true)">刘宇飞先生降临人间的伟大时刻</button>
+  <button onclick="checkAnswer(false)">地球绕太阳又转了一圈</button>
+  <button onclick="checkAnswer(false)">不就是星期天吗</button>
+
+  <audio id="wrongAudio" src="assets/audio/q1_wrong.mp3.m4a"></audio>
+
+  <script>
+    function checkAnswer(correct) {
+      if (correct) {
+        window.location.href = "question2.html";
+      } else {
+        document.getElementById("wrongAudio").play();
+        alert("再想想，你的生日耶！");
+      }
+    }
+  </script>
+</body>
+</html>

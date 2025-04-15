@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>第二题</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", sans-serif;
+      background: #ffe6f0;
+      padding: 40px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    button {
+      display: block;
+      margin: 12px 0;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #f08080;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Q2：我们刚认识那两周，每天大概聊多久？</h2>
+  <button onclick="checkAnswer(false)">十分钟速通型</button>
+  <button onclick="checkAnswer(false)">一小时礼貌型</button>
+  <button onclick="checkAnswer(true)">两到三小时灵魂拷问型</button>
+
+  <audio id="wrongAudio" src="assets/audio/q2_wrong.mp3.m4a"></audio>
+
+  <script>
+    function checkAnswer(correct) {
+      if (correct) {
+        window.location.href = "question3.html";
+      } else {
+        document.getElementById("wrongAudio").play();
+        alert("不是吧，你也太低估我们了！");
+      }
+    }
+  </script>
+</body>
+</html>
